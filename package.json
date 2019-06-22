@@ -1,0 +1,46 @@
+{
+  "name": "soda",
+  "version": "1.0.0",
+  "description": "Soda Landing Page",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwmac88/soda/issues"
+  },
+  "homepage": "https://github.com/mwmac88/soda#readme",
+  "scripts": {
+    "start": "npm run dev",
+    "clean": "rm -rf dist",
+    "eleventy-production": "eleventy",
+    "eleventy-dev": "eleventy --serve",
+    "styles-production": "node-sass src/styles/ --output dist/styles/ && postcss ./dist/styles/*.css --replace",
+    "styles-dev": "node-sass src/styles/ --output dist/styles/ --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
+    "scripts-production": "webpack --config webpack.prod.js",
+    "scripts-dev": "webpack --config webpack.dev.js",
+    "debug-eleventy": "DEBUG=Eleventy* eleventy",
+    "dev": "npm-run-all clean styles-dev scripts-dev eleventy-dev",
+    "build": "run-s clean styles-production scripts-production eleventy-production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwmac88/soda.git"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.6",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

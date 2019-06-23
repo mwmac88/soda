@@ -2,7 +2,7 @@
 
 Landing page for fictional Soda agency
 
-Tech used:
+Front-End stack:
 
 * [Eleventy - Static Site Generator](https://www.11ty.io/)
   * Nunjucks templating

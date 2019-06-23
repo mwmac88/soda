@@ -1,2 +1,11 @@
 $global-color: #13364F;
 $global-font-size: 22px;
+$global-border: #FFF;
+
+$breakpoint-small: 480px;  // Mobile Landscape
+$breakpoint-medium: 768px;  // Tablet Portait
+$breakpoint-large: 1024px; // Tablet Landscape
+$breakpoint-xlarge: 1200px !default; // Desktop +
+
+$heading-divider-padding-bottom: 32px;
+$heading-divider-border-width: 1px;

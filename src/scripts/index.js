@@ -1,1 +1,6 @@
-console.log('HELLO WORLD');
+// Import UIKIT JS
+import UIkit from 'uikit';
+import Icons from 'uikit/dist/js/uikit-icons';
+
+// loads the Icon plugin
+UIkit.use(Icons);

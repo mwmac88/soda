@@ -1,1 +1,9 @@
-// IMPORT SCSS FILES HERE
+// UIKit Custom Theme Imports
+@import "theme/variables.scss";
+
+// UIKit Default Imports
+@import "uikit/src/scss/variables.scss";
+@import "uikit/src/scss/mixins.scss";
+
+// UIKit Base File Import
+@import "uikit/src/scss/uikit.scss";

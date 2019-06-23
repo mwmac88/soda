@@ -13,13 +13,13 @@
     "start": "npm run dev",
     "clean": "rm -rf dist",
     "eleventy-production": "eleventy",
-    "eleventy-dev": "eleventy --serve",
-    "styles-production": "node-sass src/styles/ --output dist/styles/ && postcss ./dist/styles/*.css --replace",
-    "styles-dev": "node-sass src/styles/ --output dist/styles/ --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
+    "eleventy-dev": "eleventy --serve --watch",
+    "styles-production": "node-sass src/styles/ --output dist/styles/ --importer node_modules/node-sass-import && postcss ./dist/styles/*.css --replace",
+    "styles-dev": "node-sass src/styles/ --output dist/styles/ -w --importer node_modules/node-sass-import --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
     "scripts-production": "webpack --config webpack.prod.js",
-    "scripts-dev": "webpack --config webpack.dev.js",
+    "scripts-dev": "webpack --config webpack.dev.js --watch",
     "debug-eleventy": "DEBUG=Eleventy* eleventy",
-    "dev": "npm-run-all clean styles-dev scripts-dev eleventy-dev",
+    "dev": "run-p clean styles-dev scripts-dev eleventy-dev",
     "build": "run-s clean styles-production scripts-production eleventy-production"
   },
   "repository": {
@@ -41,6 +41,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "node-sass-import": "^2.0.1",
+    "uikit": "^3.1.6"
   }
 }

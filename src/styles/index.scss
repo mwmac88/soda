@@ -5,5 +5,8 @@
 @import "uikit/src/scss/variables.scss";
 @import "uikit/src/scss/mixins.scss";
 
+// UIKit Custom Mixin Overrides
+@import "theme/icon-mixins.scss";
+
 // UIKit Base File Import
 @import "uikit/src/scss/uikit.scss";

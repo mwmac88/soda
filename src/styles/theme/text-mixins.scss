@@ -1,0 +1,12 @@
+@mixin hook-text-misc() {
+  .uk-text-letter-spaced {
+    @media screen and (min-width: $breakpoint-large) {
+      letter-spacing: 9px;
+    }
+  }
+  .uk-text-letter-spaced-small {
+    @media screen and (min-width: $breakpoint-large) {
+      letter-spacing: 5px;
+    }
+  }
+}

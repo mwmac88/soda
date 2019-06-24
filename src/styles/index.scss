@@ -1,5 +1,6 @@
 // UIKit Custom Theme Imports
 @import "theme/variables.scss";
+@import "theme/container.scss";
 @import "theme/heading.scss";
 @import "theme/height.scss";
 @import "theme/inverse.scss";
@@ -10,6 +11,7 @@
 
 // UIKit Custom Mixin Overrides
 @import "theme/icon-mixins.scss";
+@import "theme/text-mixins.scss";
 
 // UIKit Base File Import
 @import "uikit/src/scss/uikit.scss";

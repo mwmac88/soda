@@ -14,12 +14,12 @@
     "clean": "rm -rf dist",
     "eleventy-production": "eleventy",
     "eleventy-dev": "eleventy --serve --watch",
-    "styles-production": "node-sass src/styles/ --output dist/styles/ --importer node_modules/node-sass-import && postcss ./dist/styles/*.css --replace",
-    "styles-dev": "node-sass src/styles/ --output dist/styles/ -w --importer node_modules/node-sass-import --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
+    "styles-production": "node-sass src/styles/index.scss --output dist/styles/ --importer node_modules/node-sass-import && postcss ./dist/styles/*.css --replace",
+    "styles-dev": "node-sass src/styles/index.scss -wo dist/styles/ --importer node_modules/node-sass-import --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
     "scripts-production": "webpack --config webpack.prod.js",
     "scripts-dev": "webpack --config webpack.dev.js --watch",
     "debug-eleventy": "DEBUG=Eleventy* eleventy",
-    "dev": "run-p clean styles-dev scripts-dev eleventy-dev",
+    "dev": "run-p clean styles-production styles-dev scripts-dev eleventy-dev",
     "build": "run-s clean styles-production scripts-production eleventy-production"
   },
   "repository": {

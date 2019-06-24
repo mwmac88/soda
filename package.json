@@ -15,7 +15,7 @@
     "eleventy-production": "eleventy",
     "eleventy-dev": "eleventy --serve --watch",
     "styles-production": "postcss src/styles/index.css --base src --dir dist",
-    "styles-dev": "postcss src/styles/index.css --base src --dir dist -wm",
+    "styles-dev": "postcss src/styles/index.css --base src --dir dist -w",
     "scripts-production": "webpack --config webpack.prod.js",
     "scripts-dev": "webpack --config webpack.dev.js --watch",
     "debug-eleventy": "DEBUG=Eleventy* eleventy",

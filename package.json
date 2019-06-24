@@ -13,11 +13,11 @@
     "start": "npm run dev",
     "clean": "rm -rf dist",
     "eleventy-production": "eleventy",
-    "eleventy-dev": "eleventy --serve",
+    "eleventy-dev": "eleventy --serve --watch",
     "styles-production": "postcss src/styles/index.css --base src --dir dist",
     "styles-dev": "postcss src/styles/index.css --base src --dir dist -wm",
     "scripts-production": "webpack --config webpack.prod.js",
-    "scripts-dev": "webpack --config webpack.dev.js",
+    "scripts-dev": "webpack --config webpack.dev.js --watch",
     "debug-eleventy": "DEBUG=Eleventy* eleventy",
     "dev": "run-p clean styles-production styles-dev scripts-dev eleventy-dev",
     "build": "run-s clean styles-production scripts-production eleventy-production"

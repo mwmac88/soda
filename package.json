@@ -14,12 +14,12 @@
     "clean": "rm -rf dist",
     "eleventy-production": "eleventy",
     "eleventy-dev": "eleventy --serve",
-    "styles-production": "node-sass src/styles/ --output dist/styles/ && postcss ./dist/styles/*.css --replace",
-    "styles-dev": "node-sass src/styles/ --output dist/styles/ --source-map true --source-map-contents true && postcss ./dist/styles/*.css --replace",
+    "styles-production": "postcss src/styles/index.css --base src --dir dist",
+    "styles-dev": "postcss src/styles/index.css --base src --dir dist -wm",
     "scripts-production": "webpack --config webpack.prod.js",
     "scripts-dev": "webpack --config webpack.dev.js",
     "debug-eleventy": "DEBUG=Eleventy* eleventy",
-    "dev": "npm-run-all clean styles-dev scripts-dev eleventy-dev",
+    "dev": "run-p clean styles-production styles-dev scripts-dev eleventy-dev",
     "build": "run-s clean styles-production scripts-production eleventy-production"
   },
   "repository": {
@@ -38,9 +38,7 @@
     "postcss-cli": "^6.1.2",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2",
-    "webpack-merge": "^4.2.1"
-  },
-  "dependencies": {
-    "node-sass": "^4.12.0"
+    "webpack-merge": "^4.2.1",
+    "tailwindcss": "^1.0.4"
   }
 }

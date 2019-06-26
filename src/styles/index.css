@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.height-hero {
-  height: 635px;
-}
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap');
+
+@import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/brands.css";
+
+@import './custom-utils.css';

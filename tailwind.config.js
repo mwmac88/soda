@@ -15,6 +15,17 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
+      soda: {
+        light: '#286191',
+        dark: '#13364F',
+      },
+
+      brands: {
+        facebook: '#256299',
+        twitter: '#378BB7',
+        insta: '#246485'
+      },
+
       gray: {
         100: '#f7fafc',
         200: '#edf2f7',
@@ -249,16 +260,17 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      body: 'Nunito, sans-serif',
     },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
       base: '1rem',
       lg: '1.125rem',
-      xl: '1.25rem',
+      xl: '1.4rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
-      '4xl': '2.25rem',
+      '4xl': '2.5rem',
       '5xl': '3rem',
       '6xl': '4rem',
     },
@@ -278,6 +290,7 @@ module.exports = {
       ...theme('spacing'),
       full: '100%',
       screen: '100vh',
+      hero: '635px',
     }),
     inset: {
       '0': '0',
@@ -289,7 +302,7 @@ module.exports = {
       normal: '0',
       wide: '0.025em',
       wider: '0.05em',
-      widest: '0.1em',
+      widest: '0.2em',
     },
     lineHeight: {
       none: '1',

@@ -10,35 +10,23 @@
   },
   "homepage": "https://github.com/mwmac88/soda#readme",
   "scripts": {
-    "start": "npm run dev",
-    "clean": "rm -rf dist",
-    "eleventy-production": "eleventy",
-    "eleventy-dev": "eleventy --serve --watch",
-    "styles-production": "postcss src/styles/index.css --base src --dir dist",
-    "styles-dev": "postcss src/styles/index.css --base src --dir dist -w",
-    "scripts-production": "webpack --config webpack.prod.js",
-    "scripts-dev": "webpack --config webpack.dev.js --watch",
-    "debug-eleventy": "DEBUG=Eleventy* eleventy",
-    "dev": "run-p clean styles-production styles-dev scripts-dev eleventy-dev",
-    "build": "run-s clean styles-production scripts-production eleventy-production"
+    "11ty:dev": "npx eleventy --serve --watch",
+    "11ty:production": "npx eleventy",
+    "parcel:dev": "npx parcel serve eleventy/index.html --out-dir dist",
+    "parcel:production": "npx parcel build eleventy/index.html --out-dir dist",
+    "dev": "run-p *:dev",
+    "build": "run-s *:production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mwmac88/soda.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^0.8.3",
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "autoprefixer": "^9.5.1",
-    "babel-loader": "^8.0.6",
-    "cssnano": "^4.1.10",
-    "cssnano-preset-advanced": "^4.0.7",
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.2",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2",
-    "webpack-merge": "^4.2.1",
+    "parcel-bundler": "^1.12.3",
+    "postcss": "^7.0.17",
     "tailwindcss": "^1.0.4"
   }
 }

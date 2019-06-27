@@ -7,7 +7,7 @@ module.exports = {
       sm: '640px',
       md: '768px',
       lg: '1024px',
-      xl: '1280px',
+      // xl: '1280px',
     },
     colors: {
       transparent: 'transparent',
@@ -203,7 +203,10 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      center: true,
+      padding: '2rem 0',
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -309,7 +312,7 @@ module.exports = {
       tight: '1.25',
       snug: '1.375',
       normal: '1.5',
-      relaxed: '1.625',
+      relaxed: '1.65',
       loose: '2',
     },
     listStyleType: {

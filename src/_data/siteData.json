@@ -1,3 +1,13 @@
 {
-  "name": "Soda Agency"
+  "name": "Soda Agency",
+  "logos": [
+    "logo_grand.png",
+    "logo_kings.png",
+    "logo_peldonrose.png",
+    "logo_studio.png",
+    "logo_barclays.png",
+    "logo_ministry.png",
+    "logo_freeview.png",
+    "logo_sony.png"
+  ]
 }

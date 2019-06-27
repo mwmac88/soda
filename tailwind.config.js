@@ -4,6 +4,7 @@ module.exports = {
   separator: ':',
   theme: {
     screens: {
+      xs: '480px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -18,6 +19,7 @@ module.exports = {
       soda: {
         light: '#286191',
         dark: '#13364F',
+        mid: '#203141',
       },
 
       brands: {
@@ -294,6 +296,8 @@ module.exports = {
       full: '100%',
       screen: '100vh',
       hero: '635px',
+      clients: '787px',
+      logobg: '230px',
     }),
     inset: {
       '0': '0',

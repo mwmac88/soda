@@ -6,13 +6,12 @@ Front-End stack:
 
 * [Eleventy - Static Site Generator](https://www.11ty.io/)
   * Nunjucks templating
-* [UIKit Front-End Framework](https://getuikit.com/)
-  * SCSS Theming
-* PostCSS for CSS Minification & Autoprefix
-* Webpack for JS & Babel Transpile & JS Sourcemaps & JS Minification
+* [tailiwindcss Utility First CSS Framework](https://tailwindcss.com/)
+  * Custom theming utilising tailwind config
+* [ParcelJS](https://parceljs.org/) for JS & CSS bundling
 
 ## Setup
 
-* Run `npm install`
-* Dev build: `npm run dev`
-* Production build: `npm run build`
+* Run `yarn install`
+* Dev build: `yarn dev`
+* Production build: `yarn build`

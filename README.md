@@ -2,15 +2,16 @@
 
 Landing page for fictional Soda agency
 
-Tech used:
+Front-End stack:
 
 * [Eleventy - Static Site Generator](https://www.11ty.io/)
-* SCSS styling
-* PostCSS for CSS Minification & Autoprefix
-* Webpack for JS & Babel Transpile & JS Sourcemaps & JS Minification
+  * Nunjucks templating
+* [tailiwindcss Utility First CSS Framework](https://tailwindcss.com/)
+  * Custom theming utilising tailwind config
+* [ParcelJS](https://parceljs.org/) for JS & CSS bundling
 
 ## Setup
 
-* Run `npm install`
-* Dev build: `npm run dev`
-* Production build: `npm run build`
+* Run `yarn install`
+* Dev build: `yarn dev`
+* Production build: `yarn build`

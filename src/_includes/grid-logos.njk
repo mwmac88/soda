@@ -1,0 +1,16 @@
+<div class="bg-cover bg-center lg:h-clients justify-center items-center py-12"
+  style="background-image: url('./images/clients_bg.jpg')"
+>
+  <div class="container flex flex-col lg:h-full lg:h-full px-4 justify-center items-center">
+    <h3 class="max-w-md text-3xl md:text-4xl uppercase tracking-widest text-center text-white border-bottom-white pb-4 mb-12 md:mb-20">
+      Our Clients
+    </h3>
+    <div class="flex flex-wrap justify-center items-center -mx-2 xs:-mx-4 md:mx-0">
+      {% for logo in siteData.logos %}
+        <div class="w:6/12 xs:w-4/12 sm:w-3/12 lg:h-logobg mx-2 xs:mx-0 mb-4">
+          <img src="images/clientlogos/{{ logo }}" class="w-32 lg:w-auto mx-auto bg-soda-mid" />
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

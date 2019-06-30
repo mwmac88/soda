@@ -1,0 +1,9 @@
+.border-bottom-white {
+  border-bottom: 1px solid theme('colors.white');
+}
+
+.border-thick-blue {
+  margin: 0;
+  padding: 0;
+  border-bottom: 8px solid theme('colors.blue.soda');
+}
